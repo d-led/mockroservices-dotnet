@@ -158,7 +158,7 @@ namespace VaughnVernon.Mockroservices
         {
             closed = true;
 
-            dispatcherThread.Abort();
+            // dispatcherThread.Abort();
         }
 
         protected EventJournalPublisher(

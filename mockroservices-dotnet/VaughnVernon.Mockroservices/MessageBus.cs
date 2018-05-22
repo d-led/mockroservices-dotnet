@@ -101,7 +101,7 @@ namespace VaughnVernon.Mockroservices
 
             closed = true;
 
-            dispatcherThread.Abort();
+            // dispatcherThread.Abort();
         }
 
         public string Name { get; private set; }
