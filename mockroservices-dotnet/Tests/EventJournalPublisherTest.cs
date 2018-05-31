@@ -16,6 +16,7 @@ using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Threading;
+using FluentAssertions;
 
 namespace VaughnVernon.Mockroservices
 {
@@ -54,7 +55,8 @@ namespace VaughnVernon.Mockroservices
 
             journalPublisher.Close();
 
-            Assert.AreEqual(6, subscriber.handledMessages.Count);
+            subscriber.handledMessages.Count.Should().Be(6);
+
         }
     }
 
