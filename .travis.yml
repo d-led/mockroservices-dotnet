@@ -9,5 +9,5 @@ os:
   - osx
 
 script:
-  - dotnet test
+  - dotnet test mockroservices-dotnet.sln
 
